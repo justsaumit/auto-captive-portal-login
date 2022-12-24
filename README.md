@@ -1,10 +1,10 @@
 # Auto-Captive-Portal-Login
-A small python script which allows you to automatically login to a captive portal by Selenium using XPath values.
+A small python script which allows you to automatically login to a captive portal with Selenium using XPath values.
 
 
 ## Pre-Requisites:
 [Selenium Webdriver](https://www.selenium.dev/documentation/webdriver/) for Python (install using `pip install selenium` or `pip install -r requirements.txt`)  
-[GNU pass](https://www.passwordstore.org/) for storing wifi-credentials (One can store their credentials in the script as plaintext aswell)  
+[GNU pass](https://www.passwordstore.org/) for storing login-credentials (One can store their credentials in the script as plaintext aswell)  
 geckodriver for Firefox in PATH (optional if not already included in selenium webdriver)
 ([Download link](https://github.com/mozilla/geckodriver/releases)) 
 
@@ -51,14 +51,14 @@ And execute it from anywhere as:
 ```
 
 ## Intentions:
-I originally wished to create a bashscript to log into my College wifi-portal just using the terminal.  
+I originally wished to create a shellscript to log into my College wifi-portal just using the terminal.  
 I later set up [this makeshift script](https://github.com/justsaumit/.dotfiles/blob/main/.scripts/wifi-captive-login)  
 which just finds out the gateway IP and uses st's -e flag that allows st to open the captive-portal in a webbrowser on a new temporary terminal window.  
-Issue was I still had to type in my wifi credentials _everytime_ :/  
+Issue was I still had to type in my login credentials _everytime_ :/  
 With this it is the same except I get to automate it using [gnu pass](https://www.passwordstore.org/)  
 and that using XPath(XML Path) to find elements is really convenient.
 
 ## Future additions:
 Update the script upon reaching college as the Xpath values would differ.  
 Make the python-script platform independent  
-or just Make a separate pure bashscript to log in via CLI using curl.
+or just Make a separate shellscript to log in via CLI using curl.
