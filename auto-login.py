@@ -12,10 +12,9 @@ from selenium.webdriver.common.by import By
 
 driver = webdriver.Firefox()
 driver.get("http://"+gateway)
-
-driver.find_element(by=By.XPATH,value="//*[@id='tf1_userName']").send_keys(w_user)
-driver.find_element(by=By.XPATH,value="//*[@id='tf1_password']").send_keys(w_pass)
-driver.find_element(by=By.XPATH,value="/html/body/div[1]/div/div/div[2]/form/div/div[5]/button").click()
+driver.find_element(by=By.XPATH,value="//*[@id='cpusername']").send_keys(w_user)
+driver.find_element(by=By.XPATH,value="//*[@id='cppassword']").send_keys(w_pass)
+driver.find_element(by=By.XPATH,value="//*[@id='btnLogin']").click()
 time.sleep(5)
 if(driver.find_element(by=By.XPATH,value="//*[@id='lblLoggedinUser']").is_displayed()):
    print("Logged in successfully!")
