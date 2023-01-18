@@ -59,7 +59,7 @@ With this it is the same except I get to automate it using [gnu pass](https://ww
 and that using XPath(XML Path) to find elements is really convenient.
 
 ## Future additions:
-~~Update the script upon reaching college as the Xpath values would differ.~~
-Rewrite the script in Java
-Make the python-script platform independent
-OR Make a separate shellscript to log in via CLI using curl
+- [x] Update the script upon reaching college as the Xpath values would differ. (done in [382c298](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) & [e248057](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) )
+- [ ] Rewrite the script in Java  
+- [ ] Make the python-script platform independent  
+- [ ]  Make a separate shellscript to log in via CLI using curl
