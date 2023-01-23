@@ -5,8 +5,10 @@ A small python script which allows you to automatically login to a captive porta
 ## Pre-Requisites:
 [Selenium Webdriver](https://www.selenium.dev/documentation/webdriver/) for Python (install using `pip install selenium` or `pip install -r requirements.txt`)  
 [GNU pass](https://www.passwordstore.org/) for storing login-credentials (One can store their credentials in the script as plaintext aswell)  
-geckodriver for Firefox in PATH (optional if not already included in selenium webdriver)
-([Download link](https://github.com/mozilla/geckodriver/releases)) 
+geckodriver for Firefox ([Download link](https://github.com/mozilla/geckodriver/releases))  
+Add the location of the geckodriver executable to your system's PATH environment variable.
+[Tutorial](https://www.learningaboutelectronics.com/Articles/How-to-install-geckodriver-Python-windows.php)
+
 
 ## Brief Look:
 [![auto-login](https://draconyan.xyz/pix/auto-login-clg.gif)](https://draconyan.xyz/pix/auto-login-clg.mp4)

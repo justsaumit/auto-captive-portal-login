@@ -10,15 +10,17 @@ gateway=pipedps.communicate()[0].decode().strip()
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-profile = webdriver.FirefoxProfile()
-profile.accept_untrusted_certs = True
+options = webdriver.FirefoxOptions()
+options.set_capability("acceptInsecureCerts", True)
+options.set_capability("assume_untrusted_cert_issuer", True)
 
-driver = webdriver.Firefox(firefox_profile=profile)
+
+driver = webdriver.Firefox(options=options)
 driver.get("http://"+gateway)
 driver.find_element(by=By.XPATH,value="//*[@id='cpusername']").send_keys(w_user)
 driver.find_element(by=By.XPATH,value="//*[@id='cppassword']").send_keys(w_pass)
 driver.find_element(by=By.XPATH,value="//*[@id='btnLogin']").click()
-time.sleep(5)
+time.sleep(9)
 if(driver.find_element(by=By.XPATH,value="//*[@id='btnLogout']").is_displayed()):
    print("Logged in successfully!")
 else:
