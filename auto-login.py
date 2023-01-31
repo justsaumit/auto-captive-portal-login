@@ -22,7 +22,9 @@ driver.find_element(by=By.XPATH,value="//*[@id='cppassword']").send_keys(w_pass)
 driver.find_element(by=By.XPATH,value="//*[@id='btnLogin']").click()
 time.sleep(9)
 if(driver.find_element(by=By.XPATH,value="//*[@id='btnLogout']").is_displayed()):
-   print("Logged in successfully!")
+    print("Logged in successfully!")
+elif(driver.find_element(by=By.XPATH,value="/html/body/table/tbody/tr/td/form/input").is_displayed()):
+    print("Logged in successfully!")
 else:
-   print("Login failed")
+    print("Login failed")
 driver.close()

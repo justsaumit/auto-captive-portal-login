@@ -53,12 +53,13 @@ And execute it from anywhere as:
 ```
 
 ## Intentions:
-I originally wished to create a shellscript to log into my College wifi-portal just using the terminal.  
+I originally wished to create a shellscript to log into my College wifi-portal just using the terminal (Since I don't use a full-fledged desktop environment that would notify me to log in to a captive-portal).  
 I later set up [this makeshift script](https://github.com/justsaumit/.dotfiles/blob/main/.scripts/wifi-captive-login)  
 which just finds out the gateway IP and uses st's -e flag that allows st to open the captive-portal in a webbrowser on a new temporary terminal window.  
-Issue was I still had to type in my login credentials _everytime_ :/  
-With this it is the same except I get to automate it using [gnu pass](https://www.passwordstore.org/)  
-and that using XPath(XML Path) to find elements is really convenient.
+The issue was I still had to type in my login credentials _everytime_ :/  
+With this, it is the same except I get to automate it using [gnu pass](https://www.passwordstore.org/) (my choice of a simple, secure and encrypted password manager)  
+and that using XPath(XML Path) to find elements is pretty convenient.
+
 
 ## Future additions:
 - [x] Update the script upon reaching college as the Xpath values would differ. (done in [382c298](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) & [e248057](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) )
