@@ -59,6 +59,6 @@ With this it is the same except I get to automate it using [gnu pass](https://ww
 and that using XPath(XML Path) to find elements is really convenient.
 
 ## Future additions:
-Update the script upon reaching college as the Xpath values would differ.  
+~~Update the script upon reaching college as the Xpath values would differ.~~
 Make the python-script platform independent  
 or just Make a separate shellscript to log in via CLI using curl.
