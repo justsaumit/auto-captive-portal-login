@@ -9,7 +9,7 @@ geckodriver for Firefox in PATH (optional if not already included in selenium we
 ([Download link](https://github.com/mozilla/geckodriver/releases)) 
 
 ## Brief Look:
-[![auto-login](https://draconyan.xyz/media/al/auto-login.gif)](https://draconyan.xyz/media/al/auto-login.mp4)
+[![auto-login](https://draconyan.xyz/media/al/auto-login-clg.gif)](https://draconyan.xyz/media/al/auto-login-clg.mp4)
 
 ## Usage:
 ```
@@ -60,5 +60,6 @@ and that using XPath(XML Path) to find elements is really convenient.
 
 ## Future additions:
 ~~Update the script upon reaching college as the Xpath values would differ.~~
-Make the python-script platform independent  
-or just Make a separate shellscript to log in via CLI using curl.
+Rewrite the script in Java
+Make the python-script platform independent
+OR Make a separate shellscript to log in via CLI using curl
