@@ -3,7 +3,7 @@ import subprocess
 
 w_user=subprocess.run(["pass","wifi-user"], capture_output=True).stdout.decode().strip()
 w_pass=subprocess.run(["pass","wifi-pass"], capture_output=True).stdout.decode().strip()
-cmd = "netstat -nr | sed -n '3p' | awk '{print $2}'"
+cmd = "netstat -nr | grep -w 'UG'| awk '{print $2}'"
 pipedps=subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
 gateway=pipedps.communicate()[0].decode().strip()
 
