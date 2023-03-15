@@ -11,8 +11,9 @@ Add the location of the geckodriver executable to your system's PATH environment
 
 
 ## Brief Look:
-[![auto-login](/media/gifs/auto-login.gif)](https://draconyan.xyz/media/al/auto-login.mp4)
+[![auto-login](/media/gifs/auto-login-clg-1.gif)](https://draconyan.xyz/media/al/auto-login-clg-1.mp4)
 
+Previous looks: [0.Initial](https://github.com/justsaumit/auto-captive-portal-login/tree/d28284646a5d0d5186de205dd3e83a4698c4c9ad)
 ## Usage:
 ```
  $ git clone https://github.com/justsaumit/auto-captive-portal-login
