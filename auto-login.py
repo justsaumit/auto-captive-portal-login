@@ -1,21 +1,12 @@
 import time
 import subprocess
-import requests
+import netifaces
 
 w_user=subprocess.run(["pass","wifi-user"], capture_output=True).stdout.decode().strip()
 w_pass=subprocess.run(["pass","wifi-pass"], capture_output=True).stdout.decode().strip()
-cmd = "netstat -nr | grep -w 'UG'| awk '{print $2}'"
+#Using netifaces to get gateway
+gateway = netifaces.gateways()['default'][netifaces.AF_INET][0]
 
-#Better implementation to get the captive portal url
-url = 'http://detectportal.firefox.com/canonical.html'
-expected_response = b'I am not a portal'
-
-response = requests.get(url)
-
-if response.content == expected_response:
-    print('Not behind a captive portal')
-else:
-    print('Behind a captive portal')
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
