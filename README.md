@@ -1,21 +1,18 @@
 # Auto-Captive-Portal-Login
 A small python script which allows you to automatically login to a captive portal with Selenium using XPath values.
 
-
 ## Pre-Requisites:
-[Selenium Webdriver](https://www.selenium.dev/documentation/webdriver/) for Python (install using `pip install selenium` or `pip install -r requirements.txt`)  
-[GNU pass](https://www.passwordstore.org/) for storing login-credentials (One can store their credentials in the script as plaintext aswell)  
-geckodriver for Firefox ([Download link](https://github.com/mozilla/geckodriver/releases))  
-Add the location of the geckodriver executable to your system's PATH environment variable.
-[Tutorial](https://www.learningaboutelectronics.com/Articles/How-to-install-geckodriver-Python-windows.php)
-
+- [Selenium Webdriver](https://www.selenium.dev/documentation/webdriver/) for Python (install using `pip install selenium` or `pip install -r requirements.txt`)
+- [GNU pass](https://www.passwordstore.org/) for storing login-credentials (One can store their credentials in the script as plaintext as well)
+- geckodriver for Firefox ([Download link](https://github.com/mozilla/geckodriver/releases))
+- Add the location of the geckodriver executable to your system's PATH environment variable. [Tutorial](https://www.learningaboutelectronics.com/Articles/How-to-install-geckodriver-Python-windows.php)
 
 ## Brief Look:
 [![auto-login](/media/gifs/auto-login-clg-2.gif)](https://draconyan.xyz/media/al/auto-login-clg-2.mp4)
 
 Previous looks: 
-* [0.Initial](https://github.com/justsaumit/auto-captive-portal-login/tree/d28284646a5d0d5186de205dd3e83a4698c4c9ad)
-* [1.First proper implementation for college-captive-portal](https://github.com/justsaumit/auto-captive-portal-login/tree/1209e1807e8670ba54ae24635819f1bcdef2876e)
+- [0.Initial attempt with Home Router](https://github.com/justsaumit/auto-captive-portal-login/tree/d28284646a5d0d5186de205dd3e83a4698c4c9ad)
+- [1.First proper implementation for college-captive-portal](https://github.com/justsaumit/auto-captive-portal-login/tree/1209e1807e8670ba54ae24635819f1bcdef2876e)
 
 ## Usage:
 ```
@@ -35,7 +32,7 @@ When done Save and exit.
 $ (text editor/IDE of choice) autologin
 ```
 
-Make the 'auto-login' shell script executable:
+Make the 'auto-login' shellscript executable:
 ```
  $ chmod +x auto-login
 ```
@@ -56,14 +53,14 @@ And execute it from anywhere as:
  $ auto-login
 ```
 
+
 ## Intentions:
-I originally wished to create a shellscript to log into my College wifi-portal just using the terminal (Since I don't use a full-fledged desktop environment that would notify me to log in to a captive-portal).  
+I originally wished to create a shell script to log into my College wifi-portal just using the terminal (Since I don't use a full-fledged desktop environment that would notify me to log in to a captive-portal).  
 I later set up [this makeshift script](https://github.com/justsaumit/.dotfiles/blob/main/.scripts/wifi-captive-login)  
 which just finds out the gateway IP and uses st's -e flag that allows st to open the captive-portal in a webbrowser on a new temporary terminal window.  
 The issue was I still had to type in my login credentials _everytime_ :/  
 With this, it is the same except I get to automate it using [gnu pass](https://www.passwordstore.org/) (my choice of a simple, secure and encrypted password manager)  
 and that using XPath(XML Path) to find elements is pretty convenient.
-
 
 ## Future additions:
 - [x] Update the script upon reaching college as the Xpath values would differ. (done in [382c298](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) & [e248057](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) )
