@@ -21,7 +21,7 @@ driver.get("http://"+gateway)
 driver.find_element(by=By.XPATH,value="//*[@id='cpusername']").send_keys(w_user)
 driver.find_element(by=By.XPATH,value="//*[@id='cppassword']").send_keys(w_pass)
 driver.find_element(by=By.XPATH,value="//*[@id='btnLogin']").click()
-time.sleep(9)
+time.sleep(15)
 if(driver.find_element(by=By.XPATH,value="//*[@id='btnLogout']").is_displayed()):
     print("Logged in successfully!")
 elif(driver.find_element(by=By.XPATH,value="/html/body/table/tbody/tr/td/form/input").is_displayed()):
