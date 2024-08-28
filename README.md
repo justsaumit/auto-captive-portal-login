@@ -65,5 +65,5 @@ and that using XPath(XML Path) to find elements is pretty convenient.
 ## Future additions:
 - [x] Update the script upon reaching college as the Xpath values would differ. (done in [382c298](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) & [e248057](https://github.com/justsaumit/auto-captive-portal-login/commit/e24805733d5689eba28770172cd1bd99dedf247d) )
 - [ ] Rewrite the script in Java
-- [ ] Make the python-script platform independent
+- [ ] Make the python-script platform independent (Create an installer that has script installed along w the dependencies like the gecko driver)
 - [ ]  Make a separate shellscript to log in via CLI using curl
